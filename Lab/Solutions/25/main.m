@@ -18,16 +18,16 @@ fprintf('Η ετεροσυσχέτιση μεγ. για lag= %d\n', lag_max);
 %Αποτελέσματα
 figure;
 subplot(3,1,1);
-stem(n, x1, 'filled');
+plot(n, x1);
 title('Σήμα x_1[n]');
 xlabel('n'); grid on;
 
 subplot(3,1,2);
-stem(n, x2, 'filled');
+plot(n, x2);
 title('Σήμα x_2[n] (25 δείγματα)');
 xlabel('n'); grid on;
 
 subplot(3,1,3);
-stem(lags, R, 'filled');
+plot(lags, R');
 title('Ετεροσυσχέτιση R_{x_1x_2}[k]');
 xlabel('lag'); ylabel('R'); grid on;
